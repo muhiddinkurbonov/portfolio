@@ -9,9 +9,119 @@
 </head>
 
 <body>
-  <h1>
-    Portfoli
-  </h1>
+  <div class="container">
+    <header class="header">
+      <nav class="navbar">
+        <a href="#about" class="nav-logo"> <img src="" alt="MK logo"> <span class="nav-brand"></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">about me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <ul class="hero-contact-icons">
+          <li><a href="https://www.linkedin.com/in/muhiddinkurbonov/" target="_blank"><img src="" alt="Linkedin"></a>
+          </li>
+          <li><a href="https://github.com/muhiddinkurbonov" target="_blank"><img src="" alt="Github"></a></li>
+          <li><a href="#" target="_blank"><img src="" alt="Resume"></a></li>
+        </ul>
+        <div>
+          <h1>Muhiddin Kurbonov</h1>
+          <p>Full Stack Web Developer</p>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <hr>
+        <div class="about-description">
+          <div class="profile">
+            <div class="pic">
+              <img src="" alt="My profile picture">
+            </div>
+
+            <p>
+              Collaborative and detail-oriented junior software engineer with a growth mindset and experience in
+              developing, testing
+              and maintaining software applications. Passionate about solving complex problems and delivering
+              high-quality
+              software solutions. Seeking a challenging role in a company where I can further develop my skills and
+              contribute to
+              the success of the organization.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li class="project">
+
+            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+          </li>
+          <li class="project">
+
+            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+          </li>
+          <li class="project">
+
+            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skill-icons">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Bash</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+
+          <div class="submit-div"><input type="submit" value="Send"></div>
+          <div id="message-status"></div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div><img src="" alt="Copyright"><a href="">muhiddinkurbonov</a></div>
+    </footer>
+  </div>
 </body>
 
 </html>
