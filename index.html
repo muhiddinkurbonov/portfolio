@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./resources/js/script.js" defer></script>
   <title>Muhiddin Kurbonov - Portfolio</title>
 </head>
 
@@ -29,16 +31,24 @@
             <a href="#contact" class="nav-link">contact</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <ul class="hero-contact-icons">
-          <li><a href="https://www.linkedin.com/in/muhiddinkurbonov/" target="_blank"><img src="" alt="Linkedin"></a>
+          <li><a href="https://www.linkedin.com/in/muhiddinkurbonov/" target="_blank"><img title="Linkedin" class="hero-icon"
+                src="./resources/svg/linkedin1.svg" alt="Linkedin"></a>
           </li>
-          <li><a href="https://github.com/muhiddinkurbonov" target="_blank"><img src="" alt="Github"></a></li>
-          <li><a href="#" target="_blank"><img src="" alt="Resume"></a></li>
+          <li><a href="https://github.com/muhiddinkurbonov" target="_blank"><img title="Github" class="hero-icon"
+                src="./resources/svg/github2.svg" alt="Github"></a></li>
+          <li><a href="./resources/files/resume.pdf" target="_blank"><img title="Resume" class="hero-icon"
+                src="./resources/svg/resume1.svg" alt="Resume"></a></li>
         </ul>
         <div>
           <h1>Muhiddin Kurbonov</h1>
@@ -70,32 +80,39 @@
         <h2>Projects</h2>
         <ul>
           <li class="project">
-
-            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+            <div class="project-links"><a href="#" target="_blank" title="Live"><img class="link-icon"
+                  src="./resources/svg/link.svg" alt=""></a><a href="#" target="_blank"><img title="Github repo"
+                  class="link-icon" src="./resources/svg/github3.svg" alt=""></a></div>
+            <img src="./resources/images/todo.png" alt="">
           </li>
           <li class="project">
-
-            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+            <div class="project-links pl-2"><a href="#" target="_blank" title="Live"><img class="link-icon"
+                  src="./resources/svg/link.svg" alt=""></a><a href="#" target="_blank"><img title="Github repo"
+                  class="link-icon" src="./resources/svg/github3.svg" alt=""></a></div>
+            <img src="./resources/images/quote-app.png" alt="">
           </li>
           <li class="project">
-
-            <div class="project-links"><a href="#" target="_blank">Live</a><a href="#" target="_blank">Github</a></div>
+            <div class="project-links"><a href="#" target="_blank" title="Live"><img class="link-icon"
+                  src="./resources/svg/link.svg" alt=""></a><a href="#" target="_blank"><img title="Github repo"
+                  class="link-icon" src="./resources/svg/github3.svg" alt=""></a></div>
+            <img src="./resources/images/todo.png" alt="">
           </li>
         </ul>
       </section>
       <section id="skills">
         <h2>Skills</h2>
         <ul class="skill-icons">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Git</li>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Bash</li>
+          <li><img src="./resources/svg/html5.svg" class="skill-icon" title="HTML5" alt="HTML5"></li>
+          <li><img src="./resources/svg/css.svg" class="skill-icon" title="CSS" alt=""></li>
+          <li><img src="./resources/svg/bootstrap.svg" class="skill-icon" title="Bootstrap" alt=""></li>
+          <li><img src="./resources/svg/javascript.svg" class="skill-icon" title="JavaScript" alt=""></li>
+          <li><img src="./resources/svg/react.svg" class="skill-icon" title="React" alt=""></li>
+          <li><img src="./resources/svg/nodejs.svg" class="skill-icon" title="Node.js" alt=""></li>
+          <li><img src="./resources/svg/git.svg" class="skill-icon" title="Git" alt=""></li>
+          <li><img src="./resources/svg/java.svg" class="skill-icon" title="Java" alt=""></li>
+          <li><img src="./resources/svg/springboot.svg" class="skill-icon" title="Spring Boot" alt=""></li>
+          <li><img src="./resources/svg/bash.svg" class="skill-icon" title="Bash" alt=""></li>
+          <li><img src="./resources/svg/github.svg" class="skill-icon" title="Github" alt=""></li>
         </ul>
       </section>
       <section id="contact">
@@ -103,7 +120,7 @@
         <form id="contact-form">
           <input type="hidden" name="contact_number">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
 
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
@@ -120,7 +137,8 @@
       </section>
     </main>
     <footer>
-      <div><img src="" alt="Copyright"><a href="">muhiddinkurbonov</a></div>
+      <div><img src="./resources/svg/copyright.svg" class="copyright-icon" alt="Copyright"><a
+          href="">muhiddinkurbonov</a></div>
     </footer>
   </div>
 </body>

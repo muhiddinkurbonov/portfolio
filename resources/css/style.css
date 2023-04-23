@@ -11,6 +11,8 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: white;
+    scroll-behavior: smooth;
+
 }
 body {
   display: flex;
@@ -40,7 +42,7 @@ section h2 {
   max-width: 1200px;
 }
 main {
-  background-color:#D2FDFF;
+  background-color: #d2fdff;
 }
 section {
   margin: 2rem 0;
@@ -56,7 +58,7 @@ section h2 {
 
 /********************** MENU *********************/
 header {
-  background-color: #09bfc9;;
+  background-color: #09bfc9;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -74,6 +76,24 @@ header {
   padding: 0;
   margin: 0;
 }
+
+.nav-brand {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: cursive, "Roboto", sans-serif;
+  color: rgb(253, 251, 251);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
 .nav-link {
   font-size: 1.3rem;
   color: #09bfc9;
@@ -83,8 +103,43 @@ header {
 .nav-link:hover {
   color: #04a2aa;
 }
+#resume-download {
+  width: 1.5rem;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 4.8rem;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
 .nav-item {
   margin: 1rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 @media only screen and (min-width: 800px) {
@@ -105,6 +160,10 @@ header {
     margin: 0;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -112,14 +171,14 @@ header {
     gap: 2rem;
   }
   .nav-link {
-  font-size: 1.3rem;
-  color: #fff;
-  transition: all 0.3s;
-}
+    font-size: 1.3rem;
+    color: #fff;
+    transition: all 0.3s;
+  }
 
-.nav-link:hover {
-  color: #334546;
-}
+  .nav-link:hover {
+    color: #334546;
+  }
   .profile {
     display: flex;
     gap: 2rem;
@@ -151,7 +210,7 @@ header {
   margin: 0;
   padding: 0;
   background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(5, 5, 5, 0.7)),
-    url("../../resources/images/chicago.jpg");
+    url("../images/chicago.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -175,7 +234,14 @@ header {
   margin-top: 4rem;
   text-align: center;
 }
-
+.hero-icon {
+  width: 2rem;
+  color: #71fab5;
+  transition: all 0.4s;
+}
+.hero-icon:hover {
+  transform: scale3d(1.3, 1.3, 1.3);
+}
 /*********************** END HERO ********************/
 
 /*********************** ABOUT ***********************/
@@ -199,6 +265,13 @@ header {
   width: 10rem;
   height: 10rem;
   border-radius: 0.3rem;
+  outline: 5rem solid rgba(109, 233, 240, 0.6);
+  outline-offset: -5rem;
+  transition: 0.3s;
+}
+.pic img:hover {
+  outline: 6px solid #09bfc9;
+  outline-offset: 5px;
 }
 .about-description p {
   line-height: 1.5rem;
@@ -217,13 +290,43 @@ header {
 #projects ul li h3 {
   text-align: center;
 }
-#projects ul li img {
-  border: 1px solid rgb(209, 205, 205);
-}
+
 #projects ul li {
-  height: 300px;
+  height: 400px;
   width: 300px;
   background-color: #fff;
+  border-radius: 0.7rem;
+}
+.project img {
+  width: 100%;
+}
+.project {
+  overflow-y: hidden;
+}
+.project-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  background-color: #000;
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+
+.pl-2{
+  background-color: #9DEADB;
+}
+
+.project-links a {
+  color: dodgerblue;
+}
+img.link-icon {
+  width: 1.3rem;
+  transition: all 0.4s;
+}
+img.link-icon:hover {
+  transform: scale3d(1.3, 1.3, 1.3);
 }
 
 /************************ END PROJECTS ******************/
@@ -235,8 +338,15 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+.skill-icon {
+  width: 6rem;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
 
-
+.skill-icon:hover {
+  transform: scale3d(1.3, 1.3, 1.3);
+}
 /************************* END SKILLS ***********************/
 
 /************** CONTACT ************/
@@ -245,20 +355,20 @@ header {
 }
 #contact label {
   padding-left: 0.8rem;
-  color: #09BFC9;
+  color: #09bfc9;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #D2FDFF;
+  border: 1px solid #d2fdff;
   border-radius: 1rem;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  color: #09BFC9;
+  color: #09bfc9;
   font-size: 1rem;
 }
 
@@ -270,13 +380,14 @@ input[type="submit"] {
   width: 200px;
   font-weight: bold;
   transition: all 0.3s;
-  
 }
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    outline: none !important;
-    border: 1px solid #13d1db;
-    box-shadow: 0 0 10px #719ECE;
-  }
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #13d1db;
+  box-shadow: 0 0 10px #719ece;
+}
 input[type="submit"]:hover {
   background-color: #022729;
   color: white;
@@ -291,6 +402,9 @@ input[type="submit"]:hover {
 .submit-div {
   display: flex;
   justify-content: center;
+}
+#message {
+  height: 200px;
 }
 /*********************** FOOTER ********************/
 
@@ -309,7 +423,9 @@ footer div {
   display: flex;
   align-items: center;
 }
-
+.copyright-icon {
+  width: 1.3rem;
+}
 /*********************** END FOOTER ********************/
 
 #about div {
@@ -317,4 +433,3 @@ footer div {
   gap: 1rem;
   align-items: center;
 }
-
