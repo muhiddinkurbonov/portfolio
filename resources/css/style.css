@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p,
+label {
+  font-family: "Roboto", sans-serif;
+  color: #1dabb3;
+}
+section h2 {
+  color: #31ced6;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+main {
+  background-color:#D2FDFF;
+}
+section {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+}
+h2 {
+  margin: 1rem 0;
+}
+section h2 {
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+/********************** MENU *********************/
+header {
+  background-color: #09bfc9;;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+.nav-logo img {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  font-size: 1.3rem;
+  color: #09bfc9;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #04a2aa;
+}
+.nav-item {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    margin: 0 10%;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nav-link {
+  font-size: 1.3rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #334546;
+}
+  .profile {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .pic {
+    width: 30%;
+    text-align: center;
+  }
+  .pic img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+  }
+  .about-description p {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+  }
+}
+/********************** MENU END *********************/
+
+/*********************** HERO ***********************/
+
+.hero {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(5, 5, 5, 0.7)),
+    url("../../resources/images/chicago.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.hero p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.hero-contact-icons {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero div {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/*********************** END HERO ********************/
+
+/*********************** ABOUT ***********************/
+.about-description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.pic {
+  display: flex;
+  justify-content: center;
+}
+.pic img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.3rem;
+}
+.about-description p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  word-spacing: 0.5rem;
+}
+/************************ END ABOUT ******************/
+
+/*********************** PROJECTS ***********************/
+#projects ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#projects ul li h3 {
+  text-align: center;
+}
+#projects ul li img {
+  border: 1px solid rgb(209, 205, 205);
+}
+#projects ul li {
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+}
+
+/************************ END PROJECTS ******************/
+
+/************************* SKILLS ***********************/
+.skill-icons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/************************* END SKILLS ***********************/
+
+/************** CONTACT ************/
+#contact {
+  max-width: 650px;
+}
+#contact label {
+  padding-left: 0.8rem;
+  color: #09BFC9;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D2FDFF;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: #09BFC9;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #13d1db;
+  color: #f5f2f2;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 200px;
+  font-weight: bold;
+  transition: all 0.3s;
+  
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none !important;
+    border: 1px solid #13d1db;
+    box-shadow: 0 0 10px #719ECE;
+  }
+input[type="submit"]:hover {
+  background-color: #022729;
+  color: white;
+  width: 300px;
+}
+::placeholder {
+  color: #40d7df;
+}
+#message-status {
+  color: green;
+}
+.submit-div {
+  display: flex;
+  justify-content: center;
+}
+/*********************** FOOTER ********************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13ccd6;
+  padding: 1rem;
+}
+footer div a {
+  margin-left: 0.3rem;
+  color: #fff;
+}
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+/*********************** END FOOTER ********************/
+
+#about div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
