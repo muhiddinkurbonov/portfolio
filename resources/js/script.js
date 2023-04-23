@@ -23,7 +23,7 @@ const contact_form = document.getElementById("contact-form");
 
 (function () {
   // https://dashboard.emailjs.com/admin/account
-  emailjs.init("6Ypa1ZEAJV_r6_pK8");
+  emailjs.init("fya5KvHcOPHdl2N78");
 })();
 
 contact_form.addEventListener("submit", function (event) {
