@@ -63,3 +63,4 @@ function fadeOut(el) {
     }
   }, 300);
 }
+
