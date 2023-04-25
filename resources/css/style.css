@@ -10,7 +10,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: #d9c0da;
     scroll-behavior: smooth;
 
 }
@@ -31,10 +31,11 @@ h3,
 p,
 label {
   font-family: "Roboto", sans-serif;
-  color: #1dabb3;
+  color: #77037B;
 }
+
 section h2 {
-  color: #31ced6;
+  color: #5e0461;
 }
 .container {
   display: flex;
@@ -42,7 +43,7 @@ section h2 {
   max-width: 1200px;
 }
 main {
-  background-color: #d2fdff;
+  background-color: #F9E2AF;
 }
 section {
   margin: 2rem 0;
@@ -58,7 +59,7 @@ section h2 {
 
 /********************** MENU *********************/
 header {
-  background-color: #09bfc9;
+  background-color: #77037B;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -81,7 +82,7 @@ header {
   font-size: 1.3rem;
   font-weight: 500;
   font-family: cursive, "Roboto", sans-serif;
-  color: rgb(253, 251, 251);
+  color: #77037B;
 }
 
 .bar {
@@ -91,17 +92,17 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #F9E2AF;
 }
 
 .nav-link {
   font-size: 1.3rem;
-  color: #09bfc9;
+  color: #77037B;
   transition: all 0.3s;
 }
 
 .nav-link:hover {
-  color: #04a2aa;
+  color: #57025a;
 }
 #resume-download {
   width: 1.5rem;
@@ -110,9 +111,9 @@ header {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 4.8rem;
+  top: 4.3rem;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #f3bf4e;
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -177,7 +178,7 @@ header {
   }
 
   .nav-link:hover {
-    color: #334546;
+    color: #F9E2AF;
   }
   .profile {
     display: flex;
@@ -218,7 +219,7 @@ header {
 }
 .hero h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 .hero p {
   color: #fff;
@@ -236,7 +237,6 @@ header {
 }
 .hero-icon {
   width: 2rem;
-  color: #71fab5;
   transition: all 0.4s;
 }
 .hero-icon:hover {
@@ -265,12 +265,12 @@ header {
   width: 10rem;
   height: 10rem;
   border-radius: 0.3rem;
-  outline: 5rem solid rgba(109, 233, 240, 0.6);
+  outline: 5rem solid rgba(119, 3, 123, 0.6);
   outline-offset: -5rem;
   transition: 0.3s;
 }
 .pic img:hover {
-  outline: 6px solid #09bfc9;
+  outline: 6px solid #77037B;
   outline-offset: 5px;
 }
 .about-description p {
@@ -355,25 +355,26 @@ img.link-icon:hover {
 }
 #contact label {
   padding-left: 0.8rem;
-  color: #09bfc9;
+  color: #77037B;
+  font-weight: 600;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #d2fdff;
+  border: none;
   border-radius: 1rem;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  color: #09bfc9;
+  color: #77037B;
   font-size: 1rem;
 }
 
 input[type="submit"] {
-  background-color: #13d1db;
+  background-color: #77037B;
   color: #f5f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -385,16 +386,15 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none !important;
-  border: 1px solid #13d1db;
-  box-shadow: 0 0 10px #719ece;
+  box-shadow: 0 0 0.3rem #77037B;
 }
 input[type="submit"]:hover {
-  background-color: #022729;
+  background-color: #3d043f;
   color: white;
   width: 300px;
 }
 ::placeholder {
-  color: #40d7df;
+  color: #c26bc5;
 }
 #message-status {
   color: green;
@@ -412,7 +412,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #13ccd6;
+  background-color: #77037B;
   padding: 1rem;
 }
 footer div a {
