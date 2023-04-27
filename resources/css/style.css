@@ -335,8 +335,7 @@ img.link-icon:hover {
   justify-content: center;
 }
 .skill-icon {
-  width: 6rem;
-  border-radius: 50%;
+  width: 4rem;
   transition: all 0.6s;
 }
 
@@ -352,11 +351,22 @@ img.link-icon:hover {
   gap: 2rem;
   font-size: 1.4rem;
 }
-
+#certified h2 {
+  margin: 0;
+}
 #certificates a {
   color: #0651bb;
 }
 
+#certified img{
+  width: 3.5rem;
+}
+#certified {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 /***************** END CERTIFICATES ***************************/
 
 /************** CONTACT ************/
