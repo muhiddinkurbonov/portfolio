@@ -11,8 +11,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #d9c0da;
-    scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -31,35 +30,33 @@ h3,
 p,
 label {
   font-family: "Roboto", sans-serif;
-  color: #77037B;
+  color: #77037b;
 }
 
-section h2 {
-  color: #5e0461;
-}
 .container {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
 }
 main {
-  background-color: #F9E2AF;
+  background-color: #f9e2af;
 }
 section {
   margin: 2rem 0;
   padding: 1rem 2rem;
 }
-h2 {
-  margin: 1rem 0;
-}
+
 section h2 {
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
   width: fit-content;
+  color: #5e0461;
+  padding: 0.2rem 0;
 }
 
 /********************** MENU *********************/
 header {
-  background-color: #77037B;
+  background-color: #77037b;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -82,7 +79,7 @@ header {
   font-size: 1.3rem;
   font-weight: 500;
   font-family: cursive, "Roboto", sans-serif;
-  color: #77037B;
+  color: #77037b;
 }
 
 .bar {
@@ -92,12 +89,12 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #F9E2AF;
+  background-color: #f9e2af;
 }
 
 .nav-link {
-  font-size: 1.3rem;
-  color: #77037B;
+  font-size: 1.2rem;
+  color: #77037b;
   transition: all 0.3s;
 }
 
@@ -172,13 +169,13 @@ header {
     gap: 2rem;
   }
   .nav-link {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
     transition: all 0.3s;
   }
 
   .nav-link:hover {
-    color: #F9E2AF;
+    color: silver;
   }
   .profile {
     display: flex;
@@ -270,7 +267,7 @@ header {
   transition: 0.3s;
 }
 .pic img:hover {
-  outline: 6px solid #77037B;
+  outline: 6px solid #77037b;
   outline-offset: 5px;
 }
 .about-description p {
@@ -313,9 +310,8 @@ header {
   padding-right: 1rem;
 }
 
-
-.pl-2{
-  background-color: #0B2447;
+.pl-2 {
+  background-color: #0b2447;
 }
 
 .project-links a {
@@ -349,13 +345,27 @@ img.link-icon:hover {
 }
 /************************* END SKILLS ***********************/
 
+/***************** CERTIFICATES ***************************/
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+#certificates a {
+  color: #0651bb;
+}
+
+/***************** END CERTIFICATES ***************************/
+
 /************** CONTACT ************/
 #contact {
   max-width: 650px;
 }
 #contact label {
   padding-left: 0.8rem;
-  color: #77037B;
+  color: #77037b;
   font-weight: 600;
 }
 
@@ -369,12 +379,12 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  color: #77037B;
+  color: #77037b;
   font-size: 1rem;
 }
 
 input[type="submit"] {
-  background-color: #77037B;
+  background-color: #77037b;
   color: #f5f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -386,7 +396,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none !important;
-  box-shadow: 0 0 0.3rem #77037B;
+  box-shadow: 0 0 0.3rem #77037b;
 }
 input[type="submit"]:hover {
   background-color: #3d043f;
@@ -412,7 +422,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #77037B;
+  background-color: #77037b;
   padding: 1rem;
 }
 footer div a {
