@@ -367,6 +367,9 @@ img.link-icon:hover {
   align-items: center;
   margin-bottom: 1rem;
 }
+.cert {
+  width: 70px;
+}
 /***************** END CERTIFICATES ***************************/
 
 /************** CONTACT ************/
